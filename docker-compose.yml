@@ -7,9 +7,9 @@ services:
       - "./:/home/jovyan/work"
     user: root
     ports:
-      - "9998:8888"
+      - "8888:8888"
     environment:
       NB_UID: 1000
       NB_GID: 1000
       GRANT_SUDO: "yes"
-    command: start.sh jupyter lab --NotebookApp.password="sha1:82d29c037295:4e7d81a84b2750b65c72483df428016aa6984b5d"
+    command: start.sh jupyter lab --NotebookApp.password="sha256:3682f7c417da:0d649df5ea905f6c03c58e662612a3f104fadfd19f2f50697667bceed8c8aaa2"
